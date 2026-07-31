@@ -1,7 +1,23 @@
 aid: oculus-vr
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/oculus-vr.png
 name: Oculus VR
-description: 'Oculus VR is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Oculus VR is the pioneering virtual reality company founded in 2012 and acquired by Facebook
+  (now Meta) in 2014. Its Rift, Go, and Quest headsets defined consumer VR, and the Oculus brand has since
+  been folded into Meta Quest and Meta Horizon OS. The former developer.oculus.com and oculus.com properties
+  now redirect to Meta''s developer platform. There is no distinct public REST/OpenAPI surface; developers
+  build against SDK-based tooling (Unity, Unreal Engine, native OpenXR, and the Meta Spatial SDK) rather
+  than a hosted web API. Backed originally by a16z; consumer VR/AR hardware and platform.'
 url: https://raw.githubusercontent.com/api-evangelist/oculus-vr/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Virtual Reality
+- Augmented Reality
+- Gaming
+- Hardware
+- Headsets
+- Metaverse
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/oculus-vr-domain-security.yml
 - type: Website
   url: https://oculus.com
+- type: Documentation
+  url: https://developers.meta.com/horizon/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
