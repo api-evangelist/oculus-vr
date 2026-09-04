@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://oculus.com', status: 301, note: 'declared website redirects to https://www.meta.com/quest/ — a different registrable domain (oculus.com -> meta.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/oculus-vr.png
 name: Oculus VR
 description: 'Oculus VR is the pioneering virtual reality company founded in 2012 and acquired by Facebook
